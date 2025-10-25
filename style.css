@@ -1,0 +1,279 @@
+:root {
+  --bg1: #e080cd;
+  --bg2: #e96262;
+  --text: #fff;
+  --dark: #1f1f2e;
+  --light: #ddd;
+  --primary: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg1), var(--bg2));
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  color: #333;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  color: #4a4ae1;
+  font-size: 1.2rem;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #4a4ae1;
+}
+
+/* Hero */
+.hero {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #fff;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.hero-text h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero-text .desc {
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.hero-buttons a {
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #fff;
+  color: #4a4ae1;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.hero-image .circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: auto;
+}
+
+/* About */
+.about {
+  background: rgba(128, 111, 111, 0.1);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+}
+
+.subtitle {
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  text-align: left;
+  color: #fff;
+}
+
+.about-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: rgba(107, 92, 92, 0.15);
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.stat h3 {
+  font-size: 2rem;
+}
+
+/* Skills */
+.skills {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: rgba(98, 89, 89, 0.15);
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+/* Projects */
+.projects {
+  background: rgba(187, 83, 83, 0.1);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: rgba(108, 100, 100, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card .tag {
+  display: inline-block;
+  background: rgba(125, 114, 114, 0.25);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin: 5px 5px 0 0;
+}
+
+/* Contact */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact-form button {
+  background: #fff;
+  color: #4a4ae1;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Footer */
+.footer {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  text-align: center;
+  color: #ddd;
+}
